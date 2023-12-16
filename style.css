@@ -185,13 +185,13 @@ body {
     .socialmedia img{
         width: 8vw;
     }
-/*     .section1 {
+    .section1 {
         position: relative;
         height: 90vh;
         background: url('atmanlogo.png') center/cover no-repeat fixed;
          background-size: 100% 100%; 
     
-    } */
+    } 
     .section1 {
         position: relative;
          height: 90vh; 
