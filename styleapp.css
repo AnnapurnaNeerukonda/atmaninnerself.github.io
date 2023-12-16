@@ -142,3 +142,7 @@
         margin-left: auto;
     }
 }
+
+.container .row h1{
+    text-align: center;
+}
