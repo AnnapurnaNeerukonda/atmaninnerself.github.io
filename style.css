@@ -193,3 +193,9 @@ body {
     
     }     
 }
+
+.container .row .col {
+    background-color: rgb(6, 7, 7);
+    color: aliceblue;
+    padding: 15px;
+    }
