@@ -132,11 +132,17 @@
     <div class="row justify-content-center">
       <div class="col-md-8 text-center">
         <h2 class="mb-5">Contact Us:</h2>
-        <a href="https://api.whatsapp.com/send/?phone=8886588887" class="whatsapp p-4"><span><img src="images/whatsapp.png" class="me-2"
-              alt="" width="3.5%"></span>Message us on Whatsapp</a>
-        <p class="mt-5 p-4">atman.innerself@gmail.com</p>
-        <p class="mt-5 p-4">Mental wellbeing, Peaceful, Relaxation</p>
-        <div class="socialmedia">
+        <div class="image" onclick="whatsapp()"  style="cursor:pointer;"><img src="images/whatsapp.png" class="me-2"
+          alt="" width="7.5%"></div>
+        <a href="https://api.whatsapp.com/send/?phone=8886588887" class="p-5 mb-5 whatsapp">Message us on Whatsapp</a>
+       
+        <div class="whatsapplinks p-2">
+        <a href="https://nas.io/psychology-student-fellowship-atman" class="m-5 p-5">Join our Psychology Students group</a>
+        <br>
+        <a href="http://chat.whatsapp.com/HGoiLPqEwrk1Hqh8w2vHWP " class="m-5 p-5">Join our Mental well-being group</a>
+      </div>
+
+        <div class="socialmedia mt-5">
           <a href="https://www.facebook.com/"><img
               src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt=""></a>
           <a href="https://www.instagram.com/atman_innerself?igshid=NGVhN2U2NjQ0Yg=="><img
@@ -165,15 +171,15 @@
       </div>
     </div>
   </div>
-  
+  <p class="mt-3 p-2 text-center fs-5">Mental wellbeing, Peaceful, Relaxation</p>
+
   <div class="text mt-lg-0  pt-5">
     <h1 class="text-center fs-5 text-light mt-2">aTman - Bride the gap to inner self</h1>
     <h1 class="fs-5 text-light mt-5 pt-3">Copyright © 2023 aTman - All Rights Reserved.<span
         class="fs-5 float-md-end text-light">Step Towards your mental wellbeing - Joining aTman
       </span></h1>
   </div>
-
-
+  
   <script>
 
     document.addEventListener('DOMContentLoaded', function () {
@@ -212,6 +218,9 @@
        }
       //  return true ;
     }
+    function whatsapp(){
+      window.open("https://api.whatsapp.com/send/?phone=8886588887", "_blank");
+        }
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
