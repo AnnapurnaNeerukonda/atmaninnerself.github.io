@@ -58,7 +58,8 @@
     <div class="row justify-content-center">
       <div class="col-md-8 text-center">
         <h2 class="mb-5 here">We're glad you're here</h2>
-        <p class="mb-5">Welcome to aTman, Our new online source for innovative and user-friendly mental health solutions. aTman aims
+        <p class="mb-5">Welcome to aTman, Our new online source for innovative and user-friendly mental health
+          solutions. aTman aims
           to provide a solution that promotes positive well-being, offers support, and helps individuals take proactive
           steps towards better mental health</p>
         <a href="#" class="coming-soon ">Coming Soon</a>
@@ -132,15 +133,20 @@
     <div class="row justify-content-center">
       <div class="col-md-8 text-center">
         <h2 class="mb-5">Contact Us:</h2>
-        <div class="image" onclick="whatsapp()"  style="cursor:pointer;"><img src="images/whatsapp.png" class="me-2"
-          alt="" width="7.5%"></div>
-        <a href="https://api.whatsapp.com/send/?phone=8886588887" class="p-5 mb-5 whatsapp">Message us on Whatsapp</a>
-       
+        <div class="image" onclick="whatsapp()" style="cursor:pointer;"><img src="images/whatsapp.png" class="me-2"
+            alt="" width="7.5%"></div>
+        <a href="https://api.whatsapp.com/send/?phone=8886588887" class="p-5 mb-5 whatsapp"></a>
+
         <div class="whatsapplinks p-2">
-        <a href="https://nas.io/psychology-student-fellowship-atman" class="m-5 p-5">Join our Psychology Students group</a>
-        <br>
-        <a href="http://chat.whatsapp.com/HGoiLPqEwrk1Hqh8w2vHWP " class="m-5 p-5">Join our Mental well-being group</a>
-      </div>
+          <p class="fs-5 p-3">If you are a psychologist or <br>
+            psychology student join our Community</p>
+          <a href="https://nas.io/psychology-student-fellowship-atman" class="m-5 pt-5">
+          Join Now</a>
+          <p class="pt-5">Join our mental well-being
+            community  <br> for getting posted on updates regarding mental health</p><br>
+          <a href="http://chat.whatsapp.com/HGoiLPqEwrk1Hqh8w2vHWP " class="m-5 pt-5">
+        Join now</a>
+        </div>
 
         <div class="socialmedia mt-5">
           <a href="https://www.facebook.com/"><img
@@ -151,9 +157,9 @@
           <a href="https://www.linkedin.com/"><img
               src="https://png.pngtree.com/element_our/png/20180827/linkedin-social-media-icon-png_71812.jpg"
               alt=""></a>
-              <p class="mt-5">atman.innerself@gmail.com</p>
+          <p class="mt-5">atman.innerself@gmail.com</p>
         </div>
-      
+
         <div class="container subscribe-container mt-5">
           <div class="row">
             <div class=" col-lg-3 col-md-12">
@@ -166,7 +172,7 @@
               <span id="error"></span>
             </div>
             <div class="col-lg-3 mb-3">
-              <a class="btn btn-dark w-100 mb-2 rounded"  onclick="signUp()">Sign Up</a>
+              <a class="btn btn-dark w-100 mb-2 rounded" onclick="signUp()">Sign Up</a>
             </div>
           </div>
         </div>
@@ -181,7 +187,7 @@
         class="fs-5 float-md-end text-light">Step Towards your mental wellbeing - Joining aTman
       </span></h1>
   </div>
-  
+
   <script>
 
     document.addEventListener('DOMContentLoaded', function () {
@@ -202,27 +208,26 @@
         }
       });
     });
-    function signUp(){
-       let email = document.getElementById("emailInputSmall");
-       let emailRegex=/^[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z].{2,4}$/;
-       console.log(email.value)
-       if(!email.value.match(emailRegex))
-       {
-            document.getElementById("error").innerHTML= "Entervalid email ";
-            return false ;
-       }
-       else{
-          alert("Thank you for signing up" );
-                     document.getElementById("error").innerHTML= "";
+    function signUp() {
+      let email = document.getElementById("emailInputSmall");
+      let emailRegex = /^[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z].{2,4}$/;
+      console.log(email.value)
+      if (!email.value.match(emailRegex)) {
+        document.getElementById("error").innerHTML = "Entervalid email ";
+        return false;
+      }
+      else {
+        alert("Thank you for signing up");
+        document.getElementById("error").innerHTML = "";
 
-          document.getElementById("emailInputSmall").value= "";
-          document.getElementById("error").innerHTML= "";
-       }
+        document.getElementById("emailInputSmall").value = "";
+        document.getElementById("error").innerHTML = "";
+      }
       //  return true ;
     }
-    function whatsapp(){
+    function whatsapp() {
       window.open("https://api.whatsapp.com/send/?phone=8886588887", "_blank");
-        }
+    }
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
